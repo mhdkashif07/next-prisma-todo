@@ -13,7 +13,7 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Todo {
+model todo {
   id String @id @default(uuid()) @map("_id")
   title String?
   isCompleted Boolean @default(false)
